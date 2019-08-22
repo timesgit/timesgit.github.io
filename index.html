@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
 
+    <script src="js/jquery.bxslider.min.js"></script>
 	<script>
     	$(document).ready(function(){
           $('.slider').bxSlider({
@@ -20,9 +20,36 @@
 			pager: true,
 			speed: 1500,
 			pause: 6000,
+			touchEnabled: false,
 		  });
         });
     </script>
+    <script>
+		$(document).ready(function() {
+		$('.myform').on('submit',function(){
+
+			// Add text 'loading...' right after clicking on the submit button.
+			$('.output_message').text('Submitting...');
+
+			var form = $(this);
+			$.ajax({
+				url: form.attr('action'),
+				method: form.attr('method'),
+				data: form.serialize(),
+				success: function(result){
+					if (result == 'success'){
+						$('.output_message').text('Congrats! You are onboard!');
+					} else {
+						$('.output_message').text('Oh! There was an error submitting your Email!');
+					}
+				}
+			});
+
+			// Prevents default submission of the form after clicking on the submit button.
+			return false;
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -125,14 +152,30 @@
                 </div>
 
                 <div class="subscribe-wrap">
-                	<form method="post" name="subscribe" action="email-sub.php">
-                        <input type="email" name="email" placeholder="Your Email Address" class="email"/>
-                        <input type="submit" value="Stay in the loop" class="submit" />
+                	<form method="post" class="myform" id="myDIV" action="process-form.php">
+                        <input type="email" name="email" placeholder="Your Email" class="email" required>
+                        <input type="submit" name="send" value="Stay in the loop" class="submit" onclick="myFunction()"><br>
+                    </form>
+
+                	<form method="post" class="myform mob-form" id="myDIV2" action="process-form.php">
+                        <input type="email" name="email" placeholder="Your Email" class="email2" required><br>
+                        <input type="submit" name="send" value="Stay in the loop" class="submit2" onclick="myFunction2()">
+                    </form>
+
+
+                    <span class="output_message" id="messageBOX"></span>
+
+                	<!--<form method="post" class="myform" action="process-form.php">
+                        <input type="email" name="email" placeholder="Your Email Address" class="email" required/>
+                        <input type="submit" name="send" value="Stay in the loop" class="submit" /><br>
 
                         <input type="email" name="email" placeholder="Your Email Address" class="email2" /><br>
                         <input type="submit" value="Stay in the loop" class="submit2" />
-                    </form>
+
+                        <span class="output_message" style="color:#F00;display:block;width:300px;height:auto;padding:15px 0;text-align:center;background:#3CC;"></span>
+                    </form>-->
                 </div>
+
 
                 <footer>
                     &copy;&nbsp;2019 Timesmix Interactive Pvt Ltd
@@ -147,40 +190,31 @@
       </div>
     </div>
 
-    <!--<script language="javascript">
-				function validate()
-				{
-						  var msg = 'For processing your enquiry please: \n\n';
-								var error = false;
+    <script>
+		function myFunction() {
+		  var x = document.getElementById("myDIV");
+		  var y = document.getElementById("messageBOX");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+		  } else {
+			x.style.display = "none";
+			y.style.display = "block";
+		  }
+		}
+		function myFunction2() {
+		  var x = document.getElementById("myDIV2");
+		  var y = document.getElementById("messageBOX");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+		  } else {
+			x.style.display = "none";
+			y.style.display = "block";
+		  }
+		}
+	</script>
 
-								if(document.subscribe.email.value=="")
-								{
-									msg = msg + "Provide your Email ID \n\n";
-									error = true;
-								}
-								if(document.subscribe.email.value!="")
-								{
-									validRegExp = /^[^@]+@[^@]+.[a-z]{2,}$/i;
-									strEmail= document.subscribe.email.value;
-									if(strEmail.search(validRegExp) == -1)
-									{
-										msg = msg + "Please provide a valid email id \n\n";
-										error = true;
-									}
-								}
-
-							if(error==true)
-								{
-									alert(msg);
-									return false;
-								}
-								else
-								{
-
-									document.subscribe.submit();
-								}
-						}
-			</script>-->
 
 </body>
 </html>
