@@ -29,6 +29,9 @@
 		$('.myform').on('submit',function(){
 
 			// Add text 'loading...' right after clicking on the submit button.
+			$('.output_message').show();
+			$('#myDIV').hide();
+			$('#myDIV2').hide();
 			$('.output_message').text('Submitting...');
 
 			var form = $(this);
@@ -153,17 +156,17 @@
 
                 <div class="subscribe-wrap">
                 	<form method="post" class="myform" id="myDIV" action="process-form.php">
-                        <input type="email" name="email" placeholder="Your Email Address" class="email" required>
-                        <input type="submit" name="send" value="Stay in the loop" class="submit" onclick="myFunction()"><br>
+                        <input type="email" name="email" placeholder="Your Email Address" class="email" required />
+                        <input type="submit" name="send" value="Stay in the loop" class="submit" ><br>
                     </form>
 
                 	<form method="post" class="myform mob-form" id="myDIV2" action="process-form.php">
                         <input type="email" name="email" placeholder="Your Email Address" class="email2" required><br>
-                        <input type="submit" name="send" value="Stay in the loop" class="submit2" onclick="myFunction2()">
+                        <input type="submit" name="send" value="Stay in the loop" class="submit2">
                     </form>
 
 
-                    <span class="output_message" id="messageBOX"></span>
+                    <br><div class="output_message" id="messageBOX"></div>
 
                 	<!--<form method="post" class="myform" action="process-form.php">
                         <input type="email" name="email" placeholder="Your Email Address" class="email" required/>
