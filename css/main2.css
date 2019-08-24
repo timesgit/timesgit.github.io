@@ -105,14 +105,16 @@
 		.app-logo-wrap{margin:70px auto;width:80%;max-width:730px;height:auto;}
 		.subscribe-wrap{margin:0px auto;width:65%;max-width:1000px;min-height:70px;height:auto;}
 			.email{width:68%;height:28px;border-radius:8px 0px 0px 8px;font-size:18px;border:3px solid #F00;padding:1%;line-height:1;}
-			.submit{width:28%;height:49px;border-radius:0px 8px 8px 0px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;font-weight:bold;line-height:1;}
+			.submit{width:28%;height:49px;border-radius:0px 8px 8px 0px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;font-weight:bold;line-height:1; cursor:pointer;}
+			/*.submit:hover{opacity:0.7;}*/
 			
 			.mob-form{display:none;}
 			
 			.email2{width:95%;height:28px;border-radius:8px;font-size:18px;border:3px solid #F00;padding:1%;line-height:1;/*display:none;*/}
-			.submit2{width:98%;height:56px;border-radius:8px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;margin-top:20px;/*display:none;*/}
+			.submit2{width:98%;height:56px;border-radius:8px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;margin-top:20px; cursor:pointer;/*display:none;*/}
+			/*.submit2:hover{opacity:0.9;}*/
 			
-			.output_message{display:none;width:70%;font-size:16px;height:auto;padding:15px 0px;margin:auto;text-align:center;background:#DFF2BF;border:2px solid #4F8A10;border-radius:6px;color:#4F8A10;}
+			.output_message{display:none;width:70%;font-size:16px;height:auto;padding:15px 0px;margin:20px auto 0 auto;text-align:center;background:#DFF2BF;border:2px solid #4F8A10;border-radius:6px;color:#4F8A10;}
 	
 	.one-left{float:left;padding:50px 0 0 50px;}
 	.one-right{float:right; background:url(../images/tphone.png) no-repeat; background-size:contain;width:380px;height:640px;}
@@ -257,8 +259,11 @@
 		.three-txt{font-size:4vw;color:#151515;}
 		.app-logo-wrap{margin:40px auto;}
 		
+		.subscribe-wrap{width:80% !important;}
+		.output_message{width:98% !important;}
+		
 		.email{display:none}
-		.submit{display:none}
+		.submit{display:none}		
 		
 		.mob-form{display:block;}
 		/*.email2{display:block;}
