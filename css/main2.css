@@ -289,12 +289,12 @@
 		h1.h1-pc-only{
 			display:none !important;
 		}
-		h1.h1-mob-only{font-size:13vw;display:block !important;
+		h1.h1-mob-only{font-size:11vw;display:block !important;
 		 font-weight:800;
 		 text-transform:uppercase;}
 
 		.two{text-align:center;font-size:6vw;}
-		
+
 		.pc-only{display:none;}
 		.mob-only{display:block;}
 		.mob-only span{font-size:10vw !important;}
