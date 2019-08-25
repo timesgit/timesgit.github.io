@@ -289,15 +289,15 @@
 		h1.h1-pc-only{
 			display:none !important;
 		}
-		h1.h1-mob-only{font-size:11vw;display:block !important;
-		 font-weight:800;
+		h1.h1-mob-only{font-size:14vw;display:block !important;
+		 font-weight:600;
 		 text-transform:uppercase;}
 
 		.two{text-align:center;font-size:6vw;}
 
 		.pc-only{display:none;}
 		.mob-only{display:block;}
-		.mob-only span{font-size:8vw !important;}
+		.mob-only span{font-size:10vw !important;}
 
 		.three-txt{font-size:6vw;}
 
