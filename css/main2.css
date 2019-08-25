@@ -40,11 +40,11 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-
+	
 	/* Page Classes */
-
+	
 	/*header{position:fixed;top:0;left:0;height:70px;width:100%;background:#fff;z-index:99999;}*/
-
+	
 	#container {
 	  overflow-y:scroll;
 	  overflow-x:hidden;
@@ -58,14 +58,14 @@
 	#container::-webkit-scrollbar {
 		display: none;
 	}
-
+	
 	#container2 {
 	  transform: rotate(90deg) translateY(-100vh);
 	  transform-origin: top left;
 	  white-space:nowrap;
 	  font-size:0;
 	}
-
+	
 	#container .box {
 	  width:100vw;
 	  height:100vh;
@@ -80,7 +80,7 @@
 	  /*border:1px solid #F00;*/
 	  margin:50px 5% 0 5%;
 	}
-
+	
 	.timesmix-logo{
 		display:block;
 		width:150px;
@@ -98,7 +98,7 @@
 		margin:0px 0 20px 20px;
 		background:url(../images/timesmix_logo.png) 100% no-repeat;
 	}
-
+	
 	.two{text-align:center;font-size:3.25vw;}
 	.three{text-align:center;}
 		.three-txt{font-size:3.25vw;color:#333;}
@@ -107,24 +107,24 @@
 			.email{width:68%;height:28px;border-radius:8px 0px 0px 8px;font-size:18px;border:3px solid #F00;padding:1%;line-height:1;}
 			.submit{width:28%;height:49px;border-radius:0px 8px 8px 0px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;font-weight:bold;line-height:1; cursor:pointer;}
 			/*.submit:hover{opacity:0.7;}*/
-
+			
 			.mob-form{display:none;}
-
+			
 			.email2{width:95%;height:28px;border-radius:8px;font-size:18px;border:3px solid #F00;padding:1%;line-height:1;/*display:none;*/}
 			.submit2{width:98%;height:56px;border-radius:8px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;margin-top:20px; cursor:pointer;/*display:none;*/}
 			/*.submit2:hover{opacity:0.9;}*/
-
+			
 			.output_message{display:none;width:70%;font-size:16px;height:auto;padding:15px 0px;margin:20px auto 0 auto;text-align:center;background:#DFF2BF;border:2px solid #4F8A10;border-radius:6px;color:#4F8A10;}
-
+	
 	.one-left{float:left;padding:50px 0 0 50px;}
 	.one-right{float:right; background:url(../images/tphone.png) no-repeat; background-size:contain;width:380px;height:640px;}
 		.slide-wrap{width:260px;height:555px;margin:27px 0 0 63px;}
-
+		
 	/*.two-left{margin-top:15%;float:left;}
 	.two-right{margin-top:15%;float:right;}
 		.google-app{width:auto;margin:25px 20px 25px 0;float:left;}
 		.apple-app{width:auto;margin:25px 0 25px 0;float:left;}
-
+	
 	.logo{
 		display:block;
 		width:194px;
@@ -132,7 +132,7 @@
 		background:url(../images/logo.png) no-repeat;
 		clear:both;
 	}*/
-
+	
 	h1.h1-pc-only{
 		 font-family: 'Lato', sans-serif;
 		 font-size:6vw;
@@ -147,7 +147,7 @@
 		 font-size:60px;
 		 font-weight:400;
 	 }
-
+	 
 	h3{
 	  	 font-family: 'Lato', sans-serif;
 		 font-size:36px;
@@ -158,21 +158,21 @@
 		 font-size:24px;
 	  	 font-weight:400;
 	 }*/
-
+	 
 	 .box-sep{display:none;}
-
+	 
 	 footer{display:block;position:fixed;bottom:0;height:30px;padding-top:10px;width:90vw;font-size:14px;color:#BBB;background:#fff;text-transform:uppercase;}
 	 .footer-mob{display:none;height:30px;padding-top:10px;width:100%;margin-top:70px;font-size:14px;color:#BBB;background:#fff;text-transform:uppercase;text-align:center;}
-
+	 
 	 .pc-only{display:block;}
 		 .pc-only p{color:#333;}
 	 .mob-only{display:none;}
-
-
+	 
+	 
 	/* Responsive CSS Styles */
-
+	
 	/*@media only screen and (min-width: 960px) and (max-width: 1199px) {
-
+		
 		#container .box > div {
 		  width:90%;
 		  height:90%;
@@ -185,20 +185,20 @@
 		h2{
 		  font-size:40px;
 		 }
-
+		 
 		 h3{
 		  font-size:30px;
 		 }
 		 p{
 		  font-size:20px;
 		 }
-
+		 
 	}*/
-
+	
 	@media only screen and (max-width: 959px) {
-
+		
 		/*.logo{margin:auto;}*/
-
+		
 		#container {
 		  overflow-y:auto;
 		  overflow-x:auto;
@@ -216,16 +216,16 @@
 		  transform:none;
 		  margin-bottom:2%;
 		}
-
+		
 		#container .box {
 		  width:100% !important;
 		  height:100% !important;
 		  position:static !important;
 		  margin:auto;
 		}
-
+		
 		.box-sep{display:block !important;clear:both !important;}
-
+		
 		#container .box > div {
 		  width:90%;
 		  max-width:none;
@@ -233,7 +233,7 @@
 		  margin:0 auto;
 		  position:static !important;
 		}
-
+		
 		.timesmix-logo{
 			display:none;
 		}
@@ -241,69 +241,69 @@
 			display:block;
 			margin-top:10px;
 		}
-
+		
 		/*.timesmix-logo{
 			position:static !important;
 			margin:10px auto 0 auto;
 			border:1px solid #00F;
 		}*/
-
+		
 		h1.h1-pc-only{
 		  font-size:9vw;
 		}
 		/*h1 br{display:none;}*/
-
-
+		
+		
 		.two{text-align:center;font-size:4vw;margin:80px 0 !important;}
 		.two p{color:#151515;}
 		.three-txt{font-size:4vw;color:#151515;}
 		.app-logo-wrap{margin:40px auto;}
-
+		
 		.subscribe-wrap{width:80% !important;}
 		.output_message{width:98% !important;}
-
+		
 		.email{display:none}
-		.submit{display:none}
-
+		.submit{display:none}		
+		
 		.mob-form{display:block;}
 		/*.email2{display:block;}
 		.submit2{display:block;}*/
-
+		 
 		 .one-left{margin:10% auto;float:none;padding:0;}
 		 .one-right{margin:3% auto;float:none;}
 			.slide-wrap{margin:none;padding-top:29px;}
-
+			
 		footer{display:none;}
 		.footer-mob{display:block;}
-
+			
 	}
-
+	
 	@media only screen and (max-width: 479px) {
 		#container .box > div { width:100%; }
-
+		
 		#container2 {
 		  margin-bottom:5%;
 		  margin-top:5%;
 		}
-
+		
 		h1.h1-pc-only{
 			display:none !important;
 		}
 		h1.h1-mob-only{font-size:14vw;display:block !important;
 		 font-weight:900;
 		 text-transform:uppercase;}
-
+		
 		.two{text-align:center;font-size:6vw;}
-
+		
 		.pc-only{display:none;}
 		.mob-only{display:block;}
 		.mob-only span{font-size:10vw !important;}
-
+		
 		.three-txt{font-size:6vw;}
-
+		
 		.one-left {width:90%; clear:both;}
-
+	
 		.one-right{background:none;width:100%;height:auto;}
 			.slide-wrap{margin:0;padding-top:0px;width:100%;clear:both;}
-
+			
 	}
