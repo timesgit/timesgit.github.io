@@ -110,8 +110,8 @@
 
 			.mob-form{display:none;}
 
-			.email2{width:95%;height:28px;border-radius:8px;font-size:18px;border:3px solid #F00;padding:1%;line-height:1;/*display:none;*/}
-			.submit2{width:98%;height:56px;border-radius:8px;font-size:18px;border:none;background:#F00;color:#fff;padding:1%;margin-top:20px; cursor:pointer;/*display:none;*/}
+		.email2{width:95%;height:28px;border-radius:8px;font-size:18px;border:3px solid #0077FF;padding:1%;line-height:1;/*display:none;*/}
+	.submit2{width:98%;height:56px;border-radius:8px;font-size:18px;border:none;background:#0077FF;color:#fff;padding:1%;margin-top:20px; cursor:pointer;/*display:none;*/}
 			/*.submit2:hover{opacity:0.9;}*/
 
 			.output_message{display:none;width:70%;font-size:16px;height:auto;padding:15px 0px;margin:20px auto 0 auto;text-align:center;background:#DFF2BF;border:2px solid #4F8A10;border-radius:6px;color:#4F8A10;}
